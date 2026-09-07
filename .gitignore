@@ -1,0 +1,58 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/*venv/
+
+# Lambda deployment package*
+*.zip
+
+# Credentials*and secrets
+.env
+.env.*
+*.pem
+*.key
+*.p*2
+*.pfx
+credentials
+credentials**
+secrets.json
+secret*.json
+
+# AWS local configuration
+.aws/
+.sam/
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Generated test files
+diskfill*
+bigfile*
+p1-test-response.json
+p2-test-response.json
+p1-rca-response.json
+p2-rca-response.json
+
+# Incident data can contain operational details
+incident-history/
+
+# Generated local RCA records
+rca/
+
+# Office temporary files
+~$*.docx
+~$*.pptx
