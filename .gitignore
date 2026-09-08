@@ -56,3 +56,16 @@ rca/
 # Office temporary files
 ~$*.docx
 ~$*.pptx
+
+# Local deployment inputs and test outputs
+datadog-install.json
+payload.json
+response.json
+delete-key.json
+*.zip
+__pycache__/
+incident-history/
+.env
+.env.*
+*.pem
+*.key

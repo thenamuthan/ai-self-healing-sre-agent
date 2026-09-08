@@ -10,6 +10,13 @@
             ],
             "Resource": "arn:aws:logs:*:*:*"
         },
+		{
+			"Effect": "Allow",
+			"Action": [
+			"secretsmanager:GetSecretValue"
+			],
+			"Resource": "*"
+		},
         {
             "Effect": "Allow",
             "Action": [
@@ -52,10 +59,18 @@
             "Effect": "Allow",
             "Action": [
                 "s3:GetObject",
+
                 "s3:ListBucket"
             ],
             "Resource": "*"
         },
+		{
+			"Effect": "Allow",
+			"Action": [
+			"s3:PutObject"
+			],
+			"Resource": "*"
+		},
         {
             "Effect": "Allow",
             "Action": [

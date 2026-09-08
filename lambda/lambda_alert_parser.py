@@ -28,11 +28,14 @@ def lambda_handler(event, context):
             logger.info(json.dumps(body))
             logger.info("RAW DATADOG BODY END")
 
+        TARGET_INSTANCE_ID = os.environ.get("TARGET_INSTANCE_ID", "")   
+        logger.info(f"TARGET_INSTANCE_ID={TARGET_INSTANCE_ID}") 
+
         alert = {
             "alert_id": body.get("alert_id", "test"),
             "alert_name": body.get("event", "Datadog Alert"),
             "host": body.get("host", "unknown"),
-            "instance_id": "i-0075567110e6e0799",
+            "instance_id": TARGET_INSTANCE_ID,
             "metric": body.get("metric", "cpu"),
             #"severity": "P2",
             "severity": body.get("severity", "P3"),
