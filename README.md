@@ -2,10 +2,6 @@
 
 AI-assisted infrastructure remediation platform integrating Datadog, AWS Lambda, Amazon SQS, Gemini, S3 runbooks, execution guardrails, DynamoDB circuit breaker, AWS Systems Manager, SNS escalation, approval workflow, and RCA storage.
 
-# AI-Powered Self-Healing SRE Agent
-
-AI-assisted infrastructure remediation platform integrating Datadog, AWS Lambda, Amazon SQS, Gemini, S3 runbooks, execution guardrails, DynamoDB circuit breaker, AWS Systems Manager, SNS escalation, approval workflow, and RCA storage.
-
 ---
 
 # Solution Architecture
